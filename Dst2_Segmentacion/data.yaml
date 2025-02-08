@@ -1,0 +1,10 @@
+path: C:\Users\matuq\OneDrive\Documentos\erosion_app\Dst2_Segmentacion
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: suelo
+  1: vegetacion
+  2: aluvial
+  3: erosion fluvial
+  4: rio
