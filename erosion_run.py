@@ -3,6 +3,7 @@ import numpy as np
 from ultralytics import YOLO
 import os
 import shutil
+from IPython.display import Image
 
 # Cargar tu modelo entrenado de YOLOv11
 modelo = YOLO('C:\\Users\\matuq\\OneDrive\\Documentos\\erosion_app\\runs\\segment\\train\\weights\\best.pt')  # Cambia esta ruta por la de tu modelo entrenado
@@ -21,7 +22,9 @@ def borrar_mascaras(output_dir):
 borrar_mascaras(output_dir)
 
 # Cargar la imagen que deseas procesar
-imagen_path = 'C:\\Users\\matuq\\OneDrive\\Documentos\\erosion_app\\ej2.jpg'  # Cambia esto por el path de tu imagen
+ 
+# imagen_path = 'C:\\Users\\matuq\\OneDrive\\Documentos\\erosion_app\\ej2.jpg'  # Cambia esto por el path de tu imagen
+imagen_path= Image.open()
 imagen = cv2.imread(imagen_path)
 
 # Verificar si la imagen se cargó correctamente
