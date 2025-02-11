@@ -6,7 +6,7 @@ import streamlit as st
 from ultralytics import YOLO
 
 # Configurar Streamlit
-st.title("Erosión")
+st.title("Erosión fluvial")
 
 # Cargar modelo YOLO
 modelo_path = './runs/segment/train/weights/best.pt'
